@@ -8,28 +8,28 @@ import Layout from './Layout.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Contact from './Contact/Contact.jsx'
 
-// const router=createBrowserRouter([
-//   {
-//     path:'/',
-//     element: <Layout />,
-//     children: [
-//       {
-//         path: "",
-//         element: <Home />
-//       },
-//       {
-//         path:"about",
-//         element: <About />
-//       },
-//       {
-//         path:"contact",
-//         element:<Contact />
-//       }
+const router=createBrowserRouter([
+  {
+    path:'/',
+    element: <Layout />,
+    children: [
+      {
+        path: "",
+        element: <Home />
+      },
+      {
+        path:"about",
+        element: <About />
+      },
+      {
+        path:"contact",
+        element:<Contact />
+      }
 
-//     ]
-//   }
-// ])
-const router = createBrowserRouter
+    ]
+  }
+])
+// const router = createBrowserRouter
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
